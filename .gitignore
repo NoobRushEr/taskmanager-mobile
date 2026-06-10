@@ -43,3 +43,12 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Firebase / platform config (do not commit)
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+# Local env files
+*.env
+# Firebase CLI local state
+.firebase/
+firebase-debug.log

@@ -52,3 +52,6 @@ ios/Runner/GoogleService-Info.plist
 # Firebase CLI local state
 .firebase/
 firebase-debug.log
+firebase.json
+.firebaserc
+android/gradle.properties

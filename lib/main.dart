@@ -5,6 +5,7 @@ import 'package:taskmanager_mobile/screens/home_screen.dart';
 import 'package:taskmanager_mobile/screens/login_screen.dart';
 import 'package:taskmanager_mobile/services/auth_service.dart';
 
+
 void main() async {
 
   WidgetsFlutterBinding.ensureInitialized();

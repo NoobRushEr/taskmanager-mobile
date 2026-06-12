@@ -27,7 +27,27 @@ class DatabaseService {
       'title': title,
       'description': description,
       'isCompleted': false,
+      'created_at': FieldValue.serverTimestamp(),
       'userId': userId,
     });
+  }
+
+  // Update an existing task
+  Future<void> updateTask(
+    String taskId,
+    String title,
+    String description,
+    bool isCompleted,
+  ) async {
+    await _db.collection('tasks').doc(taskId).update({
+      'title': title,
+      'description': description,
+      'isCompleted': isCompleted,
+    });
+  }
+
+  // Delete a task
+  Future<void> deleteTask(String taskId) async {
+    await _db.collection('tasks').doc(taskId).delete();
   }
 }
